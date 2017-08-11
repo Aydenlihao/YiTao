@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.yitao.Activity.MainActivity">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="60dp">
+    <TextView
+        android:id="@+id/ma_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="市场"/>
+</android.support.v7.widget.Toolbar>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ma_vp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/grey"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ma_bazaar"
+            android:drawableTop="@drawable/selector_ic_shopping"
+            android:text="市场"
+            style="@style/main_meun_tv"/>
+        <View
+            style="@style/main_tv_view"/>
+        <TextView
+            android:id="@+id/ma_chat"
+            android:drawableTop="@drawable/selector_ic_chat"
+            android:text="消息"
+            style="@style/main_meun_tv"/>
+        <View
+            style="@style/main_tv_view"/>
+        <TextView
+            android:id="@+id/ma_people"
+            android:drawableTop="@drawable/selector_ic_people"
+            android:text="通讯录"
+            style="@style/main_meun_tv"/>
+        <View
+            style="@style/main_tv_view"/>
+        <TextView
+            android:id="@+id/ma_identity"
+            android:drawableTop="@drawable/selector_ic_identity"
+            android:text="我的"
+            style="@style/main_meun_tv"/>
+    </LinearLayout>
+</LinearLayout>
